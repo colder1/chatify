@@ -1,7 +1,7 @@
 import { io } from 'socket.io-client';
 
-// "undefined" means the URL will be computed from the `window.location` object
-const URL = import.meta.env.VITE_SOCKET_URL || 'http://localhost:3000';
+// Agregamos comillas y https:// para que sea un texto válido
+const URL = import.meta.env.VITE_SOCKET_URL || 'https://serverchatify-production.up.railway.app';
 
 export const socket = io(URL, {
     auth: {
