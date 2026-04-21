@@ -1,4 +1,4 @@
-import { socket } from "../../socket";
+import { socket } from "../socket";
 import React, { useState } from "react";
 
 const MyForm = () => {
